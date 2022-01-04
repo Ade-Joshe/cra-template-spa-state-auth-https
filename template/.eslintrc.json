@@ -1,0 +1,80 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "standard"
+    ],
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    },
+    "ignorePatterns": [
+        "**/test/*.js"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "semi": [
+            "error",
+            "always"
+        ],
+        // "no-extra-semi": "error",
+        "no-tabs": [
+            "error",
+            {
+                "allowIndentationTabs": true
+            }
+        ],
+        "space-before-function-paren": [
+            "error",
+            "always"
+        ],
+        "object-curly-newline": [
+            "error",
+            {
+                "multiline": true
+            }
+        ],
+        "quotes": [
+            "error",
+            "double"
+        ],
+        "indent": [
+            2,
+            "tab",
+            {
+                // "indentSwitchCase": 1
+                "SwitchCase": 1
+            }
+        ],
+        "comma-dangle": [
+            "error",
+            "never"
+        ],
+        "padded-blocks": [
+            "error",
+            {
+                "blocks": "never"
+            }
+        ],
+        "no-trailing-spaces": [
+            "error",
+            {
+                "ignoreComments": true,
+                "skipBlankLines": true
+            }
+        ]
+    }
+}

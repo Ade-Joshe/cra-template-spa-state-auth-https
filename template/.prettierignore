@@ -1,0 +1,10 @@
+
+# Ignore artifacts:
+build
+coverage
+
+# Ignore files
+yarn.lock
+package-lock.json
+.html
+.json
